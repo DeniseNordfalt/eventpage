@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create event</title>
+
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/main.js"></script>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <!-- container wrapping page -->
+    <div class="wrapper">
+      <!-- header -->
+      <div class="header">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1>ADMIN</h1>
+          </div>
+        </div>
+      </div>
+      <!-- navbar -->
+      <div class="nav">
+        <ul class="flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="form.html">Create an event</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+
+      <!-- main content -->
+      <div class="main">
+        <div class="event-form-container">
+          <h2>Create an event</h2>
+
+          <form class="event-form" action="" method="get">
+            <label for="eventname">Name of event</label>
+            <input type="text" name="eventname" id="eventname" />
+
+            <label for="eventdate">Date of the event</label>
+            <input type="date" name="eventdate" id="eventdate" />
+
+            <label for="event-description">Short description</label>
+            <textarea
+              name="event-description"
+              id="event-description"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <label for="event-time-table">Agenda</label>
+
+            <fieldset>
+              <table aria-label="event-time-table">
+                <thead>
+                  <tr>
+                    <th id="time-from">From:</th>
+                    <th id="time-to">To:</th>
+                    <th id="agenda-points">Agenda point</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        type="time"
+                        name="time-start-1"
+                        id="time-start-1"
+                      />
+                    </td>
+                    <td>
+                      <input type="time" name="time-end-1" id="time-end-1" />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="agenda-point-1"
+                        id="agenda-point-1"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="time"
+                        name="time-start-2"
+                        id="time-start-2"
+                      />
+                    </td>
+                    <td>
+                      <input type="time" name="time-end-2" id="time-end-2" />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="agenda-point-2"
+                        id="agenda-point-2"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="time"
+                        name="time-start-3"
+                        id="time-start-3"
+                      />
+                    </td>
+                    <td>
+                      <input type="time" name="time-end-3" id="time-end-3" />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="agenda-point-3"
+                        id="agenda-point-3"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="time"
+                        name="time-start-4"
+                        id="time-start-4"
+                      />
+                    </td>
+                    <td>
+                      <input type="time" name="time-end-4" id="time-end-4" />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="agenda-point-4"
+                        id="agenda-point-4"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="time"
+                        name="time-start-5"
+                        id="time-start-5"
+                      />
+                    </td>
+                    <td>
+                      <input type="time" name="time-end-5" id="time-end-5" />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="agenda-point-5"
+                        id="agenda-point-5"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="time"
+                        name="time-start-6"
+                        id="time-start-6"
+                      />
+                    </td>
+                    <td>
+                      <input type="time" name="time-end-6" id="time-end-6" />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="agenda-point-6"
+                        id="agenda-point-6"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </fieldset>
+
+            <label for="event-images">Upload images:</label>
+            <div class="event-images-container">
+              <label for="event-images"></label>
+              <input type="file" name="image1" id="image1" />
+              <input type="file" name="image2" id="image2" />
+              <input type="file" name="image3" id="image3" />
+              <input type="file" name="image4" id="image4" />
+            </div>
+
+            <label for="event-category">Category</label>
+            <select name="category" id="category">
+              <option value="">Music</option>
+              <option value="">Family</option>
+              <option value="">Relaxing</option>
+            </select>
+
+            <input type="submit" value="Add event" />
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <span>Some text about the company etc</span>
+      </div>
+    </div>
+  </body>
+</html>

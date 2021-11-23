@@ -1,0 +1,62 @@
+@use "variables";
+
+//card code
+
+.card-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.card {
+  border: 1px solid variables.$primary-color;
+
+  border-radius: 10px;
+
+  flex-direction: column;
+  .card-image {
+    height: 15vmax;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+  }
+  .card-body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+
+    .card-name {
+      text-align: center;
+    }
+
+    .card-description {
+      font-style: italic;
+    }
+    .card-date,
+    .card-category {
+      font-weight: 700;
+    }
+  }
+  .more {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    margin: 2px 2px;
+
+    justify-content: space-between;
+
+    .more-button,
+    .card-link {
+      font-size: 15px;
+      font-family: monospace;
+      border: 1px solid black;
+      border-radius: 3px;
+      padding: 5px;
+      text-decoration: none;
+      font-size: 1vmax;
+      font-weight: 600;
+      background-color: variables.$secondary-color;
+      color: variables.$primary-color;
+    }
+  }
+}
